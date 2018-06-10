@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun 10 12:11:49 2018
 
-@author: Admin
+@author: Chinmay
+Non-Functional
+
 """
+
 
 import numpy as np
 import matplotlib.mlab as mlab
