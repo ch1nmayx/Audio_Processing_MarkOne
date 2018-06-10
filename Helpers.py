@@ -6,7 +6,6 @@ def record(fname):
        as the file name.
        @param string saves recorded audio with this name'''
     import pyaudio
-    #    import time
     import wave
     
     CHUNK = 1024
@@ -44,27 +43,3 @@ def record(fname):
     wf.writeframes(b''.join(frames))
     wf.close()
 
-    # start_time = time.time()
-    # match = id_sample(fname, mode="record")
-    # end_time = time.time()
-
-    # print("\n\n===================================")
-    # if match[0] == "No match was found":
-        # print (match[0])
-    # else:
-        # print("Your song is:")
-        # print(match[0])
-        # print("-------")
-        # print("Search completed in %g seconds" % (end_time - start_time))
-        # print("===================================\n")
-        # print("Press 'r' for related songs, or 'Enter' to return to menu")
-        # ans1 = raw_input()
-        # if ans1 == 'r':
-            # print("Related Songs\n=============\n")
-            # for name in match[1]:
-                # print(name.split("/")[1].strip())
-            # print("\nPress any key to return to menu")
-            # ans2 = raw_input()
-            # menu()
-        # else:
-            # menu()
